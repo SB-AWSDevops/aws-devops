@@ -11,6 +11,8 @@ phases:
     commands:
       - echo "Zipping frontend and backend files"
       - zip -r deploy.zip frontend scripts data
+
 artifacts:
   files:
-   - deploy.zip
+    - deploy.zip  # ✅ Correct indentation
+  discard-paths: yes  # ✅ Ensures only deploy.zip goes to S3
