@@ -7,7 +7,7 @@ phases:
   build:
     commands:
       - echo "preparing frontend files..."
-  post-build:
+  post_build:
     commands:
       - echo "Zipping frontend and backend files"
       - zip -r deploy.zip frontend scripts data
