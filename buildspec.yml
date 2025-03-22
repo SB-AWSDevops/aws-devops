@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "No dependencies to install for html/css/js"
+  build:
+    commands:
+      - echo "preparing frontend files..."
+  post-build:
+    commands:
+      - echo "Zipping frontend and backend files"
+      - zip -r deploy.zip frontend scripts data
+artifacts:
+  files:
+   - deploy.zip

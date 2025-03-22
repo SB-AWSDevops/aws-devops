@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AWS Banking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="number" id="user_id" placeholder="Enter User ID">
+        <button onclick="login()">Login</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+        setTimeout("noBack()", 0);
+        window.onunload = function () { null };
+    </script>
+    
+</body>
+</html>
